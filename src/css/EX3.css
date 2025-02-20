@@ -1,0 +1,19 @@
+#ex3-main-container {
+  width: 98vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#circle-container {
+  min-width: 500px;
+  min-height: 500px;
+  border: 1px dashed gray;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

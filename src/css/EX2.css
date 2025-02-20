@@ -1,0 +1,20 @@
+#EX2-main-container {
+  width: 98vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.ex2-output {
+  width: 50%;
+  background-color: rgb(27, 26, 26);
+  border-radius: 10%;
+}
+
+#temp-input {
+  width: 50%;
+  height: 4rem;
+  font-size: 3.5rem;
+}

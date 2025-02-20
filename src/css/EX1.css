@@ -1,0 +1,72 @@
+#main-container {
+  width: 100vw;
+  height: 100%;
+  border-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#calculator-container {
+  width: 30vw;
+  max-width: 367.5px;
+  max-height: 595.5px;
+  height: 75vh;
+  border: 2px dashed gray;
+  border-radius: 5%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator-screen {
+  width: 85%;
+  height: 20%;
+  border: 1px dashed cyan;
+  border-radius: 10%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 3rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#calculator-screen > button {
+  border: 1px dashed gray;
+  border-radius: 10%;
+  width: 4rem;
+  height: 2rem;
+}
+
+#calculator-screen > button:hover {
+  background-color: darkslategrey;
+}
+
+#calculator-buttons-container {
+  width: 90%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
+  gap: 1rem;
+}
+
+.tiles {
+  border: 1px dashed yellow;
+  width: 50x;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tiles:hover {
+  background-color: goldenrod;
+}

@@ -1,0 +1,25 @@
+#ex7-main-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ex7-input {
+  width: 35%;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+#ex7-submit {
+  width: 10%;
+  font-size: 1rem;
+}
+
+#ex7-output {
+  width: 35%;
+  height: 1%;
+  border: 1px solid black;
+}

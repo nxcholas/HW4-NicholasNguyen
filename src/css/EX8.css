@@ -1,0 +1,14 @@
+#ex8-main-container {
+  text-align: center;
+}
+
+#ex8-input {
+  width: 35%;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#vowels,
+#palin {
+  color: cyan;
+}
