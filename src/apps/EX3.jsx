@@ -1,33 +1,49 @@
 import { useState } from 'react';
 import '../css/EX3.css';
 
-function EX3 () {
-  let [radius, setRadius] = useState('');
-  let circumference = (2 * radius) * Math.PI;
-  let area = Math.PI * (radius ** 2);
+function EX3() {
+  const [radius, setRadius] = useState('');
+  const [circumference, setCircumference] = useState(0);
+  const [area, setArea] = useState(0);
 
-  let handleRadius = (event) => {
-    setRadius(event.target.value);
-    console.log(`The circle's circumference is ${circumference} pixels.`);
-    console.log(`The circle's area is ${area} pixels.`);
-  }
+  const handleRadius = (event) => {
+    const newRadius = Number(event.target.value); // convert input to a number
+    setRadius(newRadius);
+
+    // calculate circumference and area
+    const newCircumference = 2 * Math.PI * newRadius;
+    const newArea = Math.PI * (newRadius ** 2);
+
+    // update state
+    setCircumference(newCircumference);
+    setArea(newArea);
+
+    // log results
+    console.log(`The circle's circumference is ${newCircumference} pixels.`);
+    console.log(`The circle's area is ${newArea} pixels.`);
+  };
 
   return (
     <div id='ex3-main-container'>
       <div id='circle-container'>
-        <div 
-        id='circle'
-        style={{
-          width: `${radius}px`,
-          height: `${radius}px`,
-          border: '1px solid yellow',
-          borderRadius: '50%'
-        }}
+        <div
+          id='circle'
+          style={{
+            width: `${2 * radius}px`, 
+            height: `${2 * radius}px`, 
+            border: '1px solid yellow',
+            borderRadius: '50%',
+          }}
         ></div>
       </div>
-      <input type='number' placeholder='Enter radius (pixels):' onChange={handleRadius}></input>
+      <input
+        id='ex3-input'
+        type='number'
+        placeholder='Scroll or enter radius:'
+        onChange={handleRadius}
+      />
     </div>
-  )
+  );
 }
 
-export default EX3
+export default EX3;
