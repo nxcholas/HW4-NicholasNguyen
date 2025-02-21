@@ -3,7 +3,7 @@ import '../css/EX3.css';
 
 function EX3 () {
   let [radius, setRadius] = useState('');
-  let circumference = 2 * Math.PI * radius;
+  let circumference = 2 * (Math.PI * radius);
   let area = Math.PI * (radius ** 2);
 
   let handleRadius = (event) => {

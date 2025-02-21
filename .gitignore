@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+hw4-nicholasnguyen.zip
 
 # Editor directories and files
 .vscode/*
